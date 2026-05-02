@@ -28,13 +28,12 @@ ul {
 /* スタイルのリセット終了 */
 
 /* サイドバーとメインコンテンツを包むための要素のスタイルを書いてください */
-
 .dashboard-container {
   display: flex;
   height: 100vh;
 }
 
-/* 追加コメント サイドバー */
+/* サイドバーに関連するスタイルを書いてください */
 aside {
   width: 256px;
   flex-shrink: 0;
@@ -45,12 +44,12 @@ aside {
   height: 100%;
 }
 
-aside > header {
+aside header {
   padding: 20px;
   border-bottom: 1px solid #e0e0e0;
 }
 
-.sidebar-link {
+aside a {
   font-size: 1.25rem;
   font-weight: 600;
   color: #4f7cac;
@@ -60,24 +59,18 @@ aside > header {
   text-decoration: none;
 }
 
-.ri-home-line {
-  font-size: 1.25rem;
-  color: #4f7cac;
-}
-
-/* 追加コメント メインコンテンツ */
+/* メインコンテンツに関連するスタイルを書いてください */
 main {
   flex: 1;
 }
 
-main > section > header {
-  background-color: #fff;
+main header {
+  background-color: white;
   padding: 32px;
   border-bottom: 1px solid #e0e0e0;
   text-align: center;
 }
 
-/* プロフィールアイコン */
 .profile-icon {
   width: 96px;
   height: 96px;
@@ -88,74 +81,26 @@ main > section > header {
   align-items: center;
   margin: 0 auto 24px auto;
   font-size: 2.5rem;
-  color: #fff;
+  color: white;
 }
 
-/* タイトル */
-.title {
+h1 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #2f2f2f;
   margin-bottom: 8px;
 }
 
-/* サブタイトル */
-.subtitle {
+h2 {
   font-size: 1.125rem;
   color: #757575;
   margin-bottom: 24px;
 }
 
-/* メッセージ */
-.messages {
-  main {
-    flex: 1;
-  }
-
-  /* 追加コメント mainヘッダー */
-  main > section > header {
-    background-color: #fff;
-    padding: 32px;
-    border-bottom: 1px solid #e0e0e0;
-    text-align: center;
-  }
-
-  /* 追加コメント プロフィールアイコン */
-  .profile-icon {
-    width: 96px;
-    height: 96px;
-    background-color: #4f7cac;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 24px auto;
-    font-size: 2.5rem;
-    color: #fff;
-  }
-
-  /* 追加コメント タイトル */
-  .title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2f2f2f;
-    margin-bottom: 8px;
-  }
-
-  /* 追加コメント サブタイトル */
-  .subtitle {
-    font-size: 1.125rem;
-    color: #757575;
-    margin-bottom: 24px;
-  }
-
-  /* 追加コメント メッセージ */
-  .messages {
-    max-width: 672px;
-    margin: 0 auto;
-    padding: 32px;
-    color: #757575;
-  }
-  .messages p {
-    margin-bottom: 16px;
-  }
+.message {
+  max-width: 672px;
+  margin: 0 auto;
+  padding: 32px;
+  color: #757575;
+  margin-bottom: 16px;
+}
